@@ -63,7 +63,7 @@ class MeteoFranceService implements WeatherProviderInterface, ForecastProviderIn
                     humidity: $currentHourly['humidity'] ?? null,
                     wind: $currentHourly['wind']['speed'] ?? 0,
                     sourceName: 'Météo-France',
-                    logoUrl: 'https://meteofrance.com/sites/meteofrance.com/files/logo/LOGO_MF.png',
+                    logoUrl: 'https://meteofrance.com/sites/default/files/logo/LOGO_MF.png',
                     sourceUrl: 'https://meteofrance.com/',
                     icon: $displayMeteo['icon']
                 );
@@ -89,7 +89,7 @@ class MeteoFranceService implements WeatherProviderInterface, ForecastProviderIn
                     humidity: null,
                     wind: 0,
                     sourceName: 'Météo-France',
-                    logoUrl: 'https://meteofrance.com/sites/meteofrance.com/files/logo/LOGO_MF.png',
+                    logoUrl: 'https://meteofrance.com/sites/default/files/logo/LOGO_MF.png',
                     sourceUrl: 'https://meteofrance.com/',
                     icon: null,
                     enabled: false

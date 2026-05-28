@@ -8,6 +8,8 @@
   --forecast-bg: #f8f9fa;
   --filter-shadow: #000;
   --icon-color: #444;
+  --tmax-color: #d9534f;
+  --tmin-color: #0275d8;
 }
 
 [data-theme="dark"] {
@@ -19,6 +21,8 @@
   --forecast-bg: #252525;
   --filter-shadow: #fff;
   --icon-color: #ffd700;
+  --tmax-color: #ff6b6b;
+  --tmin-color: #5bb8ff;
 }
 
 body {
@@ -43,6 +47,7 @@ a{
   background-color: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: 0.5rem;
+  color: var(--text-color);
   transition: box-shadow 0.2s ease-in-out, background-color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -124,13 +129,11 @@ a{
 }
 
 .forecast-temps .tmax {
-  color: #d9534f;
-  /* font-weight: bold; */
+  color: var(--tmax-color, #d9534f);
 }
 
 .forecast-temps .tmin {
-  color: #0275d8;
-  /* font-weight: bold; */
+  color: var(--tmin-color, #0275d8);
 }
 
 #filter-bar {
